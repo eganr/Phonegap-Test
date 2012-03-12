@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Citizenship Application</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="main" >
+		
+		<!-- HEADER-->
+		<div data-role="header">
+			<h1>Saskatchewan</h1>
+		</div>
+		
+		<!-- NAV-->
+		<nav data-role="navbar">
+			<ul>
+				<li><a href="index.html#main" data-ajax="false">Home</a></li>
+				<li><a href="index.html#provinces" data-ajax="false" >Provinces</a></li>
+				<li><a href="index.html#map" data-ajax="false">Map</a></li>
+				<li><a href="quiz.html#main" data-ajax="false" class="ui-btn-active ui-state-persist">Quiz</a></li>
+			</ul>
+		</nav>
+	
+		<div data-role="content">
+			<form action="" method="post">
+				
+				<h3>Citizenship Quiz</h3>
+				
+				<!--Checkboxes-->
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend> Which of the following provinces are considered 'Prairie' provinces?:</legend>
+							<input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom" />
+							<label for="checkbox-1a">Alberta</label>
+			
+							<input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+							<label for="checkbox-2a">Ontario</label>
+			
+							<input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+							<label for="checkbox-3a">British Columbia</label>
+			
+							<input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom" />
+							<label for="checkbox-4a">Manitoba</label>
+				    </fieldset>
+				</div>
+				
+				<!--Slider-->
+				<div data-role="fieldcontain">
+					<label for="slider">What is the population of Canada? (In Millions)</label>
+			 		<input type="range" name="slider" id="slider" value="1" min="1" max="100"  />
+				</div>
+				
+				<!--Radio-->
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+			    	<legend>What is the capital city of Saskatchewan?:</legend>
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+			         	<label for="radio-choice-1">Regina</label>
+
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+			         	<label for="radio-choice-2">Saskatoon</label>
+
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+			         	<label for="radio-choice-3">Edmonton</label>
+
+			         	<input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4"  />
+			         	<label for="radio-choice-4">Calgary</label>
+			    	</fieldset>
+				</div>
+				
+				<!--Text-->
+				<div data-role="fieldcontain">
+	         		<label for="name">What is the first name of the current Prime Minister of Canada?:</label>
+	         		<input type="text" name="name" id="name" value=""  />
+				</div>
+				
+			</form>
+		</div>
+	</div>
+</body>
+</html>
